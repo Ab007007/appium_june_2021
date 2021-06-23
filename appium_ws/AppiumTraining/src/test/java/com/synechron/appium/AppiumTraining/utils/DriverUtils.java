@@ -165,5 +165,22 @@ public class DriverUtils {
 		return attrvalue;
 
 	}
+	
+	
+	/**
+	 * 
+	 * @param identifier- id, access-id,name,classname,xpath,androidui
+	 * @param value
+	 * @param attr
+	 * @return
+	 */
+	public static String getText(String identifier, String value)
+	{
+		System.out.println("Gettting Text using " + identifier + " and " + value);
+		String attrvalue = getElement(identifier, value).getText();
+		System.out.println("Got Text ---------------------> " + attrvalue);
+		return attrvalue;
+
+	}
 
 }
